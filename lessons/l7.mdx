@@ -1,0 +1,143 @@
+---
+title: 'L7: Extra CSS Properties'
+description: 'Exploring CSS Properties for Layout and Styling'
+---
+
+<img src="https://picsum.photos/700/300?random=2" align="center" border-radius="20px" alt="Photo" />
+
+In this lesson, we'll explore some essential CSS properties that go beyond basic colors and font sizes. These properties will help you control the layout, spacing, and appearance of elements on a webpage.
+
+---
+
+## Step 1: Margin and Padding
+
+**Margin** and **padding** are properties used to control the space around and within elements.
+
+- **Margin** adds space outside of an element, creating distance between it and neighboring elements.
+- **Padding** adds space inside an element, creating distance between its content and its border.
+
+**Example:**
+```css
+.box {
+  margin: 20px; /* Adds space around the box */
+  padding: 10px; /* Adds space within the box */
+}
+```
+
+---
+
+## Step 2: Borders
+
+The `border` property allows you to add an outline around an element. You can specify the border’s width, style, and color.
+
+**Example:**
+```css
+.box {
+  border: 2px solid black; /* A solid black border, 2px wide */
+}
+```
+
+There are several border styles you can use, such as `dotted`, `dashed`, `solid`, `double`, and more.
+
+---
+
+## Step 3: Background Properties
+
+CSS offers multiple ways to style backgrounds, including setting colors, images, and gradients.
+
+- **Background Color:** Use `background-color` to set a solid color behind an element.
+- **Background Image:** Use `background-image` to add an image as the background.
+- **Background Size & Position:** Control the size and positioning of the background image.
+
+**Example:**
+```css
+.box {
+  background-color: lightblue;
+  background-image: url('example.jpg');
+  background-size: cover; /* Makes the image cover the entire element */
+  background-position: center; /* Centers the image */
+}
+```
+
+---
+
+## Step 4: Text Alignment and Decoration
+
+Text properties can help you style the text in your elements.
+
+- **Text Align:** Use `text-align` to control text alignment (e.g., left, center, right).
+- **Text Decoration:** Use `text-decoration` to apply effects like `underline`, `line-through`, or `overline`.
+- **Text Transform:** Use `text-transform` to control text case (e.g., uppercase, lowercase).
+
+**Example:**
+```css
+.title {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+```
+
+---
+
+## Step 5: Width, Height, and Box Sizing
+
+You can control the size of elements with the `width` and `height` properties. Additionally, `box-sizing` can change how padding and borders are calculated in an element's size.
+
+- **Width and Height:** Define the width and height of an element.
+- **Box Sizing:** Use `box-sizing: border-box` to include padding and border in the element's total width and height.
+
+**Example:**
+```css
+.container {
+  width: 300px;
+  height: 200px;
+  box-sizing: border-box; /* Ensures padding and border don’t increase the element's size */
+}
+```
+
+---
+
+## Step 6: Box Shadow and Border Radius
+
+Add depth and style with shadows and rounded corners.
+
+- **Box Shadow:** Creates a shadow effect around an element.
+- **Border Radius:** Rounds the corners of an element.
+
+**Example:**
+```css
+.card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+  border-radius: 10px; /* Rounds the corners */
+}
+```
+
+---
+
+## Step 7: Opacity
+
+The `opacity` property controls the transparency of an element. A lower value makes the element more transparent.
+
+**Example:**
+```css
+.overlay {
+  opacity: 0.5; /* Makes the element semi-transparent */
+}
+```
+
+---
+
+## Summary
+
+In this lesson, we covered:
+
+- **Margin and Padding** to control spacing.
+- **Borders** for outlining elements.
+- **Background Properties** to style backgrounds with colors, images, and gradients.
+- **Text Properties** to align and decorate text.
+- **Width, Height, and Box Sizing** to control element dimensions.
+- **Box Shadow and Border Radius** for visual effects.
+- **Opacity** to adjust transparency.
+
+Experiment with these properties to see how each one can change the look and feel of your webpage!

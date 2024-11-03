@@ -1,0 +1,167 @@
+---
+title: 'L8: CSS Selectors & Combinators'
+description: 'Using CSS Selectors and Combinators'
+---
+
+<img src="https://picsum.photos/700/300?random=1" align="center" border-radius="20px" alt="Photo" />
+
+Now that you're familiar with various CSS properties, let's learn how to apply those styles more precisely by using different types of CSS selectors and combinators. These will allow you to target specific elements, groups of elements, or elements in certain states.
+
+---
+
+## Step 1: Basic Selectors
+
+1. **Type Selector:** Targets all elements of a specific type.
+   ```css
+   p {
+     color: darkblue;
+   }
+   ```
+   This applies a dark blue color to all `<p>` elements.
+
+2. **Class Selector:** Targets all elements with a specific class.
+   ```css
+   .highlight {
+     background-color: yellow;
+   }
+   ```
+   All elements with `class="highlight"` will have a yellow background.
+
+3. **ID Selector:** Targets a single element with a specific ID. IDs should be unique on each page.
+   ```css
+   #header {
+     font-size: 24px;
+   }
+   ```
+   The element with `id="header"` will have a font size of 24 pixels.
+
+4. **Universal Selector (`*`):** Targets all elements.
+   ```css
+   * {
+     margin: 0;
+     padding: 0;
+   }
+   ```
+   This removes default margins and padding from all elements.
+
+---
+
+## Step 2: Attribute Selectors
+
+CSS allows you to select elements based on attributes. This is useful for styling elements like links or form inputs based on their properties.
+
+1. **Basic Attribute Selector:** Matches elements with a specific attribute.
+   ```css
+   [type="text"] {
+     border: 1px solid gray;
+   }
+   ```
+   This targets all `<input type="text">` elements, adding a gray border.
+
+2. **Partial Attribute Selectors:**
+   - **Begins With (`^=`):** Targets elements with an attribute that starts with a specific value.
+     ```css
+     [href^="https"] {
+       color: green;
+     }
+     ```
+     Links that start with "https" will be green.
+   
+   - **Contains (`*=`):** Targets elements with an attribute containing a specific value.
+     ```css
+     [href*="blog"] {
+       color: blue;
+     }
+     ```
+     Links with "blog" anywhere in their URL will be blue.
+
+---
+
+## Step 3: Combinators
+
+Combinators allow you to select elements based on their relationships to other elements. This is helpful for selecting elements in a specific context or structure.
+
+1. **Descendant Selector (` `):** Selects elements that are inside other elements.
+   ```css
+   div p {
+     color: gray;
+   }
+   ```
+   This targets all `<p>` elements that are inside a `<div>`.
+
+2. **Child Selector (`>`):** Selects elements that are direct children of a specific element.
+   ```css
+   ul > li {
+     font-weight: bold;
+   }
+   ```
+   This targets only `<li>` elements that are direct children of a `<ul>`.
+
+3. **Adjacent Sibling Selector (`+`):** Selects an element that is immediately after another specific element.
+   ```css
+   h2 + p {
+     margin-top: 0;
+   }
+   ```
+   This targets any `<p>` element that immediately follows an `<h2>`.
+
+4. **General Sibling Selector (`~`):** Selects all elements that are siblings after a specific element.
+   ```css
+   h2 ~ p {
+     color: purple;
+   }
+   ```
+   This targets all `<p>` elements that are siblings after an `<h2>`.
+
+---
+
+## Step 4: Pseudo-Classes
+
+Pseudo-classes allow you to select elements based on their state, like when a user hovers over an element or selects a checkbox.
+
+1. **Hover (`:hover`):** Targets an element when it’s hovered over.
+   ```css
+   a:hover {
+     color: orange;
+   }
+   ```
+   Links will turn orange when hovered over.
+
+2. **First Child (`:first-child`):** Selects the first child of a parent element.
+   ```css
+   p:first-child {
+     font-weight: bold;
+   }
+   ```
+   The first `<p>` inside a parent will be bold.
+
+3. **Nth Child (`:nth-child(n)`):** Selects the nth child of a parent element.
+   ```css
+   li:nth-child(2) {
+     color: red;
+   }
+   ```
+   The second `<li>` item in a list will be red.
+
+4. **Checked (`:checked`):** Selects checkboxes or radio buttons that are checked.
+   ```css
+   input[type="checkbox"]:checked {
+     background-color: lightgreen;
+   }
+   ```
+   Checked checkboxes will have a light green background.
+
+---
+
+## Summary
+
+In this lesson, you learned:
+
+- **Basic Selectors** like type, class, ID, and universal selectors.
+- **Attribute Selectors** to target elements based on attributes and values.
+- **Combinators** to select elements based on relationships, like descendants, children, and siblings.
+- **Pseudo-Classes** to style elements in specific states, like `:hover` and `:first-child`.
+
+Experimenting with these selectors and combinators will give you greater control over the look and feel of your webpage, allowing you to target elements more precisely.
+
+```

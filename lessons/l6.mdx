@@ -1,0 +1,102 @@
+---
+title: 'L6: CSS'
+description: 'Intro to CSS'
+---
+
+<img src="https://picsum.photos/700/300?random=3" align="center" border-radius="20px" alt="Photo" />
+
+
+In this lesson, we'll explore how to style HTML elements using different methods in CSS. By the end, you'll know how to use inline CSS, `<style>` tags, classes, and IDs to change the look of your webpage.
+
+## Step 1: Inline CSS
+
+Inline CSS allows you to style individual HTML elements by adding the `style` attribute directly within the HTML tag. This is useful for quick, one-off changes, but it can become cumbersome for larger projects. It is not recommended for most use cases.
+
+**Example:**
+```html
+<p style="color: blue; font-size: 16px;">This text is blue and 16px in size!</p>
+```
+
+This code styles the paragraph directly, making it blue with a font size of 16 pixels.
+
+---
+
+## Step 2: The `<style>` Tag
+
+The `<style>` tag allows you to define CSS styles within your HTML file but outside of individual elements. This is great for applying styles to multiple elements and keeping your code more organized.
+
+**Example:**
+```html index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    p {
+      color: green;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <p>This text is green and 18px in size!</p>
+</body>
+</html>
+```
+
+Here, all `<p>` elements within the `<body>` will have green text and a font size of 18 pixels.
+
+---
+
+## Step 3: Classes
+
+Classes allow you to apply the same style to multiple elements. This is done by creating a CSS class in your `<style>` section and then applying it to HTML elements with the `class` attribute.
+
+**Example:**
+```html
+<style>
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+</style>
+
+<p class="highlight">This paragraph is highlighted!</p>
+<p class="highlight">This one too!</p>
+```
+
+Both paragraphs with the `highlight` class will have a yellow background and bold text.
+
+---
+
+## Step 4: IDs
+
+IDs are unique identifiers for specific elements. Use the `id` attribute to apply styles to a single element. In CSS, IDs are defined with a `#` symbol followed by the ID name.
+
+**Example:**
+```html
+<style>
+  #special {
+    color: red;
+    text-transform: uppercase;
+  }
+</style>
+
+<p id="special">This is a special paragraph!</p>
+```
+
+In this case, only the paragraph with `id="special"` will be styled in red and uppercase.
+
+---
+
+## Summary
+
+- **Inline CSS:** Use for quick, single-element styling with the `style` attribute.
+- **`<style>` Tag:** Define styles within the HTML for multiple elements.
+- **Classes:** Use the `class` attribute to style multiple elements with the same look.
+- **IDs:** Use the `id` attribute to style one unique element.
+
+Now you have the foundational knowledge to style HTML elements in different ways!
+
+---
+
+Now, try experimenting with each of these methods to see how they work in your code!
