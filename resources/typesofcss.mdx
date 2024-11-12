@@ -1,0 +1,60 @@
+---
+title: 'Ways to Use CSS'
+description: 'A list of ways to use CSS.'
+---
+
+You can apply CSS in 3 ways:
+
+1. Inline
+2. Internal
+3. External
+
+
+## Inline
+
+Inline CSS is applied directly to an HTML element using the `style` attribute.
+
+```html
+<div style="color: red;">Inline CSS</div>
+```
+
+
+## Internal
+
+Internal CSS is applied to an HTML element using a `<style>` element within the `<head>` section of an HTML document.
+
+```html
+<style>
+  div {
+    color: red;
+  }
+</style>
+<div>Internal CSS</div>
+```
+
+
+## External
+
+External CSS is applied to an HTML element using a `<link>` element within the `<head>` section of an HTML document.
+
+<CodeGroup>
+
+```html index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div>External CSS</div>
+</body>
+</html>
+```
+
+```css styles.css
+/* styles.css */
+div {
+  color: red;
+}
+```
+</CodeGroup>

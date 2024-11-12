@@ -1,0 +1,130 @@
+---
+title: 'Extra HTML Tags'
+description: 'A list of extra HTML tags.'
+---
+
+## `<center>`
+- **Purpose**: Center aligns the content within its parent element.
+- **Note**: This tag is outdated and may not be supported in all browsers, which is why it may be displayed in red in code editors.
+
+---
+
+## `<marquee>`
+- **Purpose**: Creates scrolling text on a webpage.
+- **Note**: `<marquee>` is deprecated. It can make content difficult to access for users with limited dexterity and may be distracting for users with cognitive or attention deficits.
+  
+Example:
+```
+<marquee behavior="scroll" direction="right">EXAMPLE</marquee>
+```
+
+---
+
+## `<div>`
+- **Purpose**: A generic container element, used to divide code sections for organization.
+- **Usage**: While `<div>` itself doesn’t apply styling, CSS or JavaScript can be added to style or add functionality to it.
+- **Best Practice**: Use `<div>` to logically group sections of content but avoid overuse for cleaner, more efficient code.
+
+---
+
+## `<a>`
+- **Purpose**: Creates a link to another page or website.
+- **Attributes**:
+  - `href`: Specifies the URL to navigate to.
+  - `target`: Determines how the link opens:
+    - `_blank`: Opens the link in a new tab.
+    - `_self`: Opens the link in the same tab.
+
+**Example**:
+```html
+<a href="https://www.google.com" target="_blank">Google</a>
+```
+
+---
+
+## `<img>`
+- **Purpose**: Displays an image.
+- **Attributes**:
+  - `src`: Specifies the URL or path of the image file.
+  - `alt`: Provides alternative text for accessibility and SEO.
+  - `width` & `height`: Define the dimensions of the image.
+
+**Example**:
+```html
+<img src="image.jpg" alt="Description of the image" width="200" height="100">
+```
+
+---
+
+## `<section>`
+- **Purpose**: Organizes content into thematic sections.
+- **Usage**: Used for grouping related content. Ideal for outlining distinct sections of content within a webpage.
+
+**Example**:
+```html
+<section>
+  <h2>About Us</h2>
+  <p>Information about the company.</p>
+</section>
+```
+
+---
+
+## `<header>`
+- **Purpose**: Contains introductory or navigational elements for a webpage or section.
+- **Usage**: Typically includes logos, headings, and navigation links.
+
+**Example**:
+```html
+<header>
+  <h1>Website Title</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+```
+
+---
+
+## `<footer>`
+- **Purpose**: Marks the footer section of a webpage or article.
+- **Usage**: Often includes copyright info, contact links, or social media links.
+
+**Example**:
+```html
+<footer>
+  <p>&copy; 2024 Company Name. All rights reserved.</p>
+</footer>
+```
+
+---
+
+## `<article>`
+- **Purpose**: Defines a self-contained piece of content.
+- **Usage**: Commonly used for blog posts, news stories, or comments.
+
+**Example**:
+```html
+<article>
+  <h2>Article Title</h2>
+  <p>Content of the article...</p>
+</article>
+```
+
+---
+
+## `<aside>`
+- **Purpose**: Marks content related to the main content, like sidebars.
+- **Usage**: Useful for displaying ads, related links, or other supplementary content.
+
+**Example**:
+```html
+<aside>
+  <h3>Related Links</h3>
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+  </ul>
+</aside>
+```

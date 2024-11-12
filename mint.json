@@ -7,7 +7,7 @@
     "href": "/"
   },
   "favicon": "/logo/dark.svg",
-  "theme": "prism",
+  "theme": "quill",
   "modeToggle": {
   "default": "dark",
   "isHidden": true
@@ -22,8 +22,8 @@
     }
   },
   "topbarCtaButton": {
-    "name": "Old Lessons",
-    "url": "https://warninn.github.io/"
+    "name": "CODE EDITOR",
+    "url": "https://warninn.github.io/monaco.html"
   },
   "anchors": [
     {
@@ -46,6 +46,15 @@
         "lessons/l6",
         "lessons/l7",
         "lessons/l8"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "resources/csstable",
+        "resources/typesofcss",
+        "resources/extratags",
+        "resources/htmldoc"
       ]
     }
   ],
