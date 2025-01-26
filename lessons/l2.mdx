@@ -1,0 +1,111 @@
+---
+title: 'Lesson 2: HTML Headings'
+description: 'Understanding h1 and Heading Elements in HTML'
+---
+
+<img src="https://picsum.photos/700/300?random=3" align="center" border-radius="20px" alt="Photo" />
+
+## What is an h1 Heading?
+
+The `<h1>` tag is the most important heading in HTML. It represents the main heading or title of a webpage. Search engines and screen readers give special importance to the h1 heading, making it crucial for both SEO and accessibility.
+
+### Key Characteristics of h1
+
+- It should be used only once per page
+- Represents the primary topic or purpose of the page
+- Typically the largest and most prominent heading
+
+### h1 Example
+
+```html
+<h1>This is a Main Heading</h1>
+```
+
+## Headings from h1 to h6
+
+HTML provides six levels of headings, from `<h1>` to `<h6>`. While `<h1>` is for the main title, the others are for subheadings and sections.
+
+- `<h2>` is used for major sections
+- `<h3>` is used for subsections
+- `<h4>` to `<h6>` are for even deeper sub-sections
+
+It's important to use headings in a logical order, creating a clear structure for your content.
+
+### Example of Headings
+
+```html
+<h1>Main Title of the Page</h1>
+<h2>Section 1</h2>
+<h3>Subsection 1.1</h3>
+<h2>Section 2</h2>
+<h3>Subsection 2.1</h3>
+<h4>Sub-subsection 2.1.1</h4>
+```
+
+## Lists in HTML
+
+HTML offers two main types of lists: ordered and unordered.
+
+### Ordered Lists (`<ol>`)
+
+Ordered lists are used when the order of items is important. They are displayed with numbers or letters.
+
+```html
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+```
+
+### Unordered Lists (`<ul>`)
+
+Unordered lists are used when the order of items doesn't matter. They are displayed with bullet points.
+
+```html
+<ul>
+  <li>Item A</li>
+  <li>Item B</li>
+  <li>Item C</li>
+</ul>
+```
+
+## Emmet for Faster HTML
+
+Emmet is a toolkit that can greatly speed up your HTML writing. It uses simple abbreviations that expand into full HTML code.
+
+### Emmet Examples
+
+- `h1` + Tab expands to `<h1></h1>`
+- `h2` + Tab expands to `<h2></h2>`
+- `ul>li*3` + Tab expands to
+```html
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+```
+- `ol>li*5` + Tab expands to
+```html
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+```
+
+## Your Task
+
+Create an HTML document that includes:
+
+1.  An `<h1>` heading for the main title of the page.
+2.  At least two `<h2>` headings for major sections.
+3.  Use `<h3>` and `<h4>` headings within those sections.
+4.  An ordered list with at least 4 items.
+5.  An unordered list with at least 3 items.
+6.  Use Emmet to generate the lists.
+
+This task will help you practice using headings, lists, and Emmet for faster HTML writing.

@@ -7,7 +7,7 @@
     "href": "/"
   },
   "favicon": "/logo/dark.svg",
-  "theme": "quill",
+  "theme": "venus",
   "modeToggle": {
   "default": "dark",
   "isHidden": true
@@ -25,13 +25,6 @@
     "name": "CODE EDITOR",
     "url": "https://warninn.github.io/monaco.html"
   },
-  "anchors": [
-    {
-      "name": "Help",
-      "icon": "life-ring",
-      "url": "https://rentry.co/plscodehelp"
-    }
-  ],
   "navigation": [
     {
       "group": "Get Started",
@@ -42,10 +35,18 @@
     {
       "group": "Lessons",
       "pages": [
-        "lessons/l-prev",
+        "lessons/l1",
+        "lessons/l2",
+        "lessons/l3",
         "lessons/l6",
         "lessons/l7",
-        "lessons/l8"
+        "lessons/l8",
+        "lessons/l9",
+        "lessons/l10",
+        "lessons/l11",
+        "lessons/l12",
+        "lessons/l13",
+        "lessons/l14"
       ]
     },
     {

@@ -1,0 +1,174 @@
+---
+title: 'L10: More CSS Flexbox'
+description: 'Learn about flex alignment and direction'
+---
+
+<img src="https://picsum.photos/700/300?random=5" align="center" border-radius="20px" alt="Photo" />
+
+## Flex Direction
+
+The `flex-direction` property determines how flex items are placed in the container:
+
+```css
+.container {
+  display: flex;
+  flex-direction: row; /* default */
+}
+```
+
+Available values:
+- `row`: Left to right (default)
+- `column`: Top to bottom
+- `row-reverse`: Right to left
+- `column-reverse`: Bottom to top
+
+## align-items Property
+
+While `justify-content` works along the main axis, `align-items` works along the cross axis:
+
+```css
+.container {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  height: 200px; /* Container needs height for vertical alignment */
+}
+```
+
+Common values:
+- `stretch` (default): Items stretch to fill container
+- `center`: Items are centered
+- `flex-start`: Items align at start
+- `flex-end`: Items align at end
+- `baseline`: Items align at their text baseline
+
+## Practice Exercise 1: Centered Content
+
+Create a container with perfectly centered content both horizontally and vertically.
+
+<Accordion title="🎯 Task">
+Center a div both horizontally and vertically in its container.
+</Accordion>
+
+<Accordion title="🔍 Hint 1">
+The container needs both height and display: flex.
+</Accordion>
+
+<Accordion title="🔍 Hint 2">
+Use both justify-content and align-items.
+</Accordion>
+
+<Accordion title="🔍 Hint 3">
+Both properties should be set to center.
+</Accordion>
+
+<Accordion title="💡 Solution">
+```html
+<div class="container">
+  <div class="centered">
+    I'm centered!
+  </div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 2px solid #ccc;
+}
+
+.centered {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+```
+</Accordion>
+
+## flex-wrap Property
+
+By default, flex items try to fit in one line. `flex-wrap` can change this behavior:
+
+```css
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Items will wrap to next line if needed */
+}
+```
+
+Values:
+- `nowrap` (default): All items in one line
+- `wrap`: Items wrap to multiple lines
+- `wrap-reverse`: Items wrap to multiple lines in reverse
+
+## Practice Exercise 2: Card Layout
+
+Create a responsive card layout that wraps cards to new rows as needed.
+
+<Accordion title="🎯 Task">
+Create a container with multiple cards that wrap when the screen is too narrow.
+</Accordion>
+
+<Accordion title="🔍 Hint 1">
+Use flex-wrap: wrap on the container.
+</Accordion>
+
+<Accordion title="🔍 Hint 2">
+Give the cards a fixed width so they'll wrap.
+</Accordion>
+
+<Accordion title="🔍 Hint 3">
+Add some gap between the cards using gap property.
+</Accordion>
+
+<Accordion title="💡 Solution">
+```html
+<div class="card-container">
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+  <div class="card">Card 4</div>
+</div>
+```
+
+```css
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+```
+</Accordion>
+
+## Quick Tips
+
+1. Remember that flex-direction changes what's considered the main axis
+2. align-items needs container height to work with vertical alignment
+3. flex-wrap is great for responsive designs
+4. Use gap property to add space between flex items
+
+## Keyboard Shortcuts
+
+- `Alt + Click`: Multiple cursors in editor
+- `Ctrl + D`: Select next occurrence
+- `Ctrl + /`: Comment/uncomment line
+- `Alt + ↑/↓`: Move line up/down
+
+## Next Lesson Preview
+In the next lesson, we'll learn about:
+- CSS Grid
+- Creating grid layouts
+- Grid columns and rows
+- Grid template areas
+
+Try combining justify-content, align-items, and flex-wrap to create different layouts! 

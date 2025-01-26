@@ -1,0 +1,135 @@
+---
+title: 'L13: Introduction to JavaScript'
+description: 'Learn the basics of JavaScript and how to use it in your web pages'
+---
+
+<img src="https://picsum.photos/700/300?random=8" align="center" border-radius="20px" alt="Photo" />
+
+## What is JavaScript?
+
+JavaScript is a programming language that makes websites interactive. While HTML provides structure and CSS handles styling, JavaScript adds behavior and functionality to web pages.
+
+## Adding JavaScript to HTML
+
+Since we're working with a single-file editor, we'll use the `<script>` tag to add JavaScript directly in our HTML:
+
+```html
+<script>
+  // Your JavaScript code goes here
+</script>
+```
+
+## Console Output
+
+The console is a tool for developers to output messages and debug code. To see the console, press F12 in your browser and click on "Console".
+
+```html
+<script>
+  console.log('Hello, World!');  // Outputs: Hello, World!
+  console.log(42);              // Outputs: 42
+</script>
+```
+
+## Practice Exercise 1: Your First JavaScript
+
+Write your first JavaScript code using console.log.
+
+<Accordion title="🎯 Task">
+Output three different messages to the console.
+</Accordion>
+
+<Accordion title="🔍 Hint 1">
+Use console.log() for each message.
+</Accordion>
+
+<Accordion title="🔍 Hint 2">
+Try outputting different types of data (text, numbers).
+</Accordion>
+
+<Accordion title="🔍 Hint 3">
+Remember to put text inside quotes.
+</Accordion>
+
+<Accordion title="💡 Solution">
+```html
+<script>
+  console.log('Welcome to JavaScript!');
+  console.log(2023);
+  console.log('Learning to code is fun!');
+</script>
+```
+</Accordion>
+
+## Variables
+
+Variables are containers for storing data. We use `let` to declare variables that might change and `const` for values that won't change.
+
+```javascript
+let name = "John";          // A string variable
+let age = 25;              // A number variable
+const DAYS_IN_WEEK = 7;    // A constant value
+```
+
+## Practice Exercise 2: Working with Variables
+
+Create and use some variables in JavaScript.
+
+<Accordion title="🎯 Task">
+Create variables for your name and age, then output them to the console.
+</Accordion>
+
+<Accordion title="🔍 Hint 1">
+Use let to declare your variables.
+</Accordion>
+
+<Accordion title="🔍 Hint 2">
+Remember to use quotes for text (strings).
+</Accordion>
+
+<Accordion title="🔍 Hint 3">
+Use console.log to output the variables.
+</Accordion>
+
+<Accordion title="💡 Solution">
+```html
+<script>
+  let myName = "Alex";
+  let myAge = 15;
+  
+  console.log(myName);
+  console.log(myAge);
+  console.log("My name is " + myName + " and I am " + myAge + " years old.");
+</script>
+```
+</Accordion>
+
+## Quick Tips
+
+1. JavaScript is case-sensitive (`name` and `Name` are different variables)
+2. Always declare variables with `let` or `const`
+3. Use meaningful variable names
+4. End each statement with a semicolon
+5. Use the console to check your outputs
+
+## Common Mistakes to Avoid
+
+1. Forgetting to use quotes around text
+2. Using variables before declaring them
+3. Misspelling variable names
+4. Forgetting to open the console to see outputs
+
+## Keyboard Shortcuts
+
+- `F12`: Open browser developer tools
+- `Ctrl + /`: Comment/uncomment line
+- `Alt + ↑/↓`: Move line up/down
+- `Ctrl + S`: Save your work
+
+## Next Lesson Preview
+In the next lesson, we'll learn about:
+- Different types of data in JavaScript
+- Basic math operations
+- String operations
+- Type checking
+
+Remember to practice with the console and try creating your own variables! 

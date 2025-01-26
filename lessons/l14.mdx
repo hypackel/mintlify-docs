@@ -1,0 +1,149 @@
+---
+title: 'L14: JavaScript Data Types'
+description: 'Learn about different types of data in JavaScript and how to work with them'
+---
+
+<img src="https://picsum.photos/700/300?random=9" align="center" border-radius="20px" alt="Photo" />
+
+## Basic Data Types
+
+JavaScript has several basic data types that we use to store different kinds of information:
+
+### Strings (Text)
+```javascript
+let firstName = "John";
+let lastName = 'Doe';
+let message = `Hello there`;  // Template literal
+```
+
+### Numbers
+```javascript
+let age = 25;        // Integer
+let price = 19.99;   // Decimal
+let temperature = -5; // Negative number
+```
+
+## Practice Exercise 1: Working with Strings
+
+Let's practice combining strings in different ways.
+
+<Accordion title="🎯 Task">
+Create two variables with your first and last name, then combine them.
+</Accordion>
+
+<Accordion title="🔍 Hint 1">
+Use the + operator to join strings.
+</Accordion>
+
+<Accordion title="🔍 Hint 2">
+Don't forget to add a space between names.
+</Accordion>
+
+<Accordion title="🔍 Hint 3">
+Try using both + operator and template literals.
+</Accordion>
+
+<Accordion title="💡 Solution">
+```html
+<script>
+  let firstName = "John";
+  let lastName = "Doe";
+  
+  // Using + operator
+  console.log(firstName + " " + lastName);
+  
+  // Using template literal
+  console.log(`${firstName} ${lastName}`);
+</script>
+```
+</Accordion>
+
+## Basic Math Operations
+
+JavaScript can perform various mathematical operations:
+
+```javascript
+let a = 10;
+let b = 5;
+
+console.log(a + b);  // Addition: 15
+console.log(a - b);  // Subtraction: 5
+console.log(a * b);  // Multiplication: 50
+console.log(a / b);  // Division: 2
+```
+
+## Practice Exercise 2: Calculator
+
+Create a simple calculator that performs basic math operations.
+
+<Accordion title="🎯 Task">
+Create variables for two numbers and show the result of all basic math operations.
+</Accordion>
+
+<Accordion title="🔍 Hint 1">
+Declare two number variables.
+</Accordion>
+
+<Accordion title="🔍 Hint 2">
+Use console.log to show each operation.
+</Accordion>
+
+<Accordion title="🔍 Hint 3">
+Add labels to make the output clear.
+</Accordion>
+
+<Accordion title="💡 Solution">
+```html
+<script>
+  let num1 = 10;
+  let num2 = 5;
+  
+  console.log("Addition: " + (num1 + num2));
+  console.log("Subtraction: " + (num1 - num2));
+  console.log("Multiplication: " + (num1 * num2));
+  console.log("Division: " + (num1 / num2));
+</script>
+```
+</Accordion>
+
+## Type Checking
+
+Use `typeof` to check what type of data you're working with:
+
+```javascript
+let name = "John";
+let age = 25;
+
+console.log(typeof name);  // "string"
+console.log(typeof age);   // "number"
+```
+
+## Quick Tips
+
+1. Strings must be wrapped in quotes
+2. Numbers don't need quotes
+3. Use template literals (backticks) for easier string formatting
+4. Math operations between numbers and strings might not work as expected
+
+## Common Mistakes to Avoid
+
+1. Adding numbers as strings ('2' + '2' = '22')
+2. Forgetting to convert string input to numbers
+3. Using mathematical operations with undefined variables
+4. Not checking data types before operations
+
+## Keyboard Shortcuts
+
+- `F12`: Open browser developer tools
+- `Ctrl + K`: Clear console
+- `Alt + ↑/↓`: Move line up/down
+- `Ctrl + /`: Comment/uncomment line
+
+## Next Lesson Preview
+In the next lesson, we'll learn about:
+- Conditional statements (if/else)
+- Comparison operators
+- Boolean values
+- Making decisions in code
+
+Remember to experiment with different data types and operations in the console! 

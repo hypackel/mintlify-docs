@@ -1,0 +1,67 @@
+---
+title: "L3: Useful HTML Tags"
+description: "Learn about useful HTML tags like center, div, and anchor, and how to use them effectively."
+---
+<img src="https://picsum.photos/700/300?random=3" align="center" border-radius="20px" alt="Photo" />
+
+## Introduction
+
+In this lesson, we'll explore some essential HTML tags that help structure and enhance your web pages. We'll cover the `<center>`, `<div>`, and `<a>` tags, explaining their purpose and how to use them correctly.
+
+## The `<center>` Tag
+
+The `<center>` tag is used to center-align the content within its parent element.
+
+**Warning:** This tag is not supported in all browsers and is considered deprecated. It's generally better to use CSS for styling instead.
+
+```html
+<center>
+  This text will be centered.
+</center>
+```
+
+## The `<div>` Tag
+
+The `<div>` tag is a container used to divide up your code into sections. It doesn't have any inherent styling, but it's crucial for structuring your HTML and applying CSS or JavaScript.
+
+- It does nothing unless CSS or JavaScript is added to it.
+- Good code does not overuse divs but does not underuse divs. Think of it like groups of code that look good in these bunches.
+
+```html
+<div>
+  <p>This is a paragraph inside a div.</p>
+  <p>Another paragraph inside the same div.</p>
+</div>
+```
+
+## The `<a>` Tag
+
+The `<a>` tag creates an anchor link, which is used to link to another page or website.
+
+- `href` is the attribute you pass in to specify the destination URL.
+- `target` is the attribute that specifies how the link should open:
+    - `_blank` opens the link in a new tab.
+    - `_self` opens the link in the same tab.
+
+**Example:**
+
+```html
+<a href="https://www.google.com" target="_blank">Google</a>
+```
+
+**Result:**
+
+<a href="https://www.google.com" target="_blank">Google</a>
+
+## Your Task
+
+1. Open the editor provided by the club.
+2. Create a `div` element.
+3. Inside the `div`, create a `center` element.
+4. Inside the `center` element, add some text.
+5. Create an `a` tag that links to your favorite website.
+6. Make the link open in a new tab.
+
+**Challenge:** Try nesting multiple `div` elements inside each other and see how it affects the layout.
+
+

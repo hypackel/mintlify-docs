@@ -1,0 +1,156 @@
+---
+title: 'L9: CSS Flexbox Basics'
+description: 'Learn the fundamentals of CSS Flexbox layout'
+---
+
+<img src="https://picsum.photos/700/300?random=4" align="center" border-radius="20px" alt="Photo" />
+
+## What is Flexbox?
+
+Flexbox is a CSS layout model that makes it easier to design flexible responsive layouts. Think of it like a way to arrange items in a container, either in a row or a column.
+
+## Creating a Flex Container
+
+To start using Flexbox, we need to make a container "flexible" by setting `display: flex`.
+
+```html
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  /* This makes it a flex container */
+}
+```
+
+## Main Axis vs Cross Axis
+
+In Flexbox, we have two important axes:
+- Main Axis: The primary direction (horizontal by default)
+- Cross Axis: The perpendicular direction (vertical by default)
+
+## justify-content Property
+
+The `justify-content` property aligns items along the main axis. Here are the main values:
+
+```css
+.container {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+}
+```
+
+Common values include:
+- `flex-start` (default): Items at the start
+- `center`: Items at the center
+- `flex-end`: Items at the end
+- `space-between`: Equal space between items
+- `space-around`: Equal space around items
+
+## Practice Exercise 1: Center a Button
+
+Create a container that centers a button horizontally.
+
+<Accordion title="🎯 Task">
+Center a button in its container using Flexbox.
+</Accordion>
+
+<Accordion title="🔍 Hint 1">
+First, create a container div and a button inside it.
+</Accordion>
+
+<Accordion title="🔍 Hint 2">
+Make the container a flex container using `display: flex`.
+</Accordion>
+
+<Accordion title="🔍 Hint 3">
+Use `justify-content: center` to center the button.
+</Accordion>
+
+<Accordion title="💡 Solution">
+```html
+<div class="container">
+  <button>Click Me</button>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  justify-content: center;
+}
+```
+</Accordion>
+
+## Practice Exercise 2: Navigation Bar
+
+Create a simple navigation bar with items spread across the container.
+
+<Accordion title="🎯 Task">
+Create a navigation bar with 3-4 links spread evenly across the width.
+</Accordion>
+
+<Accordion title="🔍 Hint 1">
+Use a `nav` element as your flex container.
+</Accordion>
+
+<Accordion title="🔍 Hint 2">
+Put your links inside the nav and use `justify-content: space-between`.
+</Accordion>
+
+<Accordion title="🔍 Hint 3">
+Add some padding and style the links to remove the default underline.
+</Accordion>
+
+<Accordion title="💡 Solution">
+```html
+<nav class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</nav>
+```
+
+```css
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+```
+</Accordion>
+
+## Quick Tips
+
+1. Always set `display: flex` on the container, not the items
+2. The default direction is row (horizontal)
+3. justify-content works along the main axis
+4. Flexbox is one-dimensional (either row OR column)
+
+## Keyboard Shortcuts
+
+While working with CSS:
+- `Ctrl + /`: Comment/uncomment line
+- `Alt + ↑/↓`: Move line up/down
+- `Ctrl + Space`: Trigger suggestions
+
+## Next Lesson Preview
+In the next lesson, we'll learn about:
+- align-items property
+- flex-direction
+- flex-wrap
+- More complex Flexbox layouts
+
+Try experimenting with the justify-content property using different values to see how they affect your layouts!
